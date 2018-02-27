@@ -6,7 +6,7 @@ import time
 
 # Configure the PIN 8:
 GPIO.setmode(GPIO.BOARD)
-GPIO.seup(8, GPIO.OUT)
+GPIO.setup(8, GPIO.OUT)
 GPIO.setwarnings(False)
 
 
@@ -20,6 +20,5 @@ while True:
     GPIO.output(8, False)
     time.sleep(blink_interval)
 
-
-# Release Resources:
+# Release Resource:
 GPIO.cleanup()
